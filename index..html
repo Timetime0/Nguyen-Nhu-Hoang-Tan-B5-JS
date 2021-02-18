@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B5-Js</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+   <div class="col-6">
+    <form>
+        <div class="form-group">
+            <h1>Quản lý tuyển sinh</h1>
+            <h3>Nhập điểm 3 môn học</h3>
+          <label for="mon1">Nhập điểm môn thứ 1</label>
+          <input type="text" class="form-control" id="mon1" aria-describedby="emailHelp">
+          <label for="mon2">Nhập điểm môn thứ 2</label>
+          <input type="text" class="form-control" id="mon2" aria-describedby="emailHelp">
+          <label for="mon3">Nhập điểm môn thứ 3</label>
+          <input type="text" class="form-control" id="mon3" aria-describedby="emailHelp">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group">
+                <h4>Nhập khu vực</h4>
+               <div>
+                    <input type="radio" name="area" id="area0" value="0" >
+                    <label for="area0" class="pr-5">X (không thuộc khu vực ưu tiên)</label>
+                    <input type="radio" name="area" id="area1" value="2" >
+                    <label for="area1" class="pr-5">A</label>
+                    <input type="radio" name="area" id="area2" value="1" >
+                    <label for="area2" class="pr-5">B</label>
+                    <input type="radio" name="area" id="area3" value="0.5" >
+                    <label for="area3" class="pr-5">C</label>
+               </div>
+            </div>     
+          <div class="input-group">
+                <h4>Nhập đối tượng</h4>
+               <div>
+                    <input type="radio" name="uuTien" id="uuTien0" value="0" >
+                    <label for="uuTien0" class="pr-5">0 (không thuộc diện đối tượng)</label>
+                    <input type="radio" name="uuTien" id="uuTien1" value="2.5" >
+                    <label for="uuTien1" class="pr-5"> 1</label>
+                    <input type="radio" name="uuTien" id="uuTien2" value="1.5" >
+                    <label for="uuTien2" class="pr-5">2</label>
+                    <input type="radio" name="uuTien" id="uuTien3" value="1" >
+                    <label for="uuTien3" class="pr-5">3</label>
+               </div>
+            </div>
+         </div>
+        <button type="button" class="btn btn-primary" id="btn1">Tổng điểm</button>
+    </form>
+    <p id="thongbao1"></p>
+   </div>
+
+
+   <hr>
+   <div class="col-6">
+    <form>
+        <div class="form-group">
+            <h1>Tính tiền điện</h1>
+            <h3>Nhập Tên và số Km</h3>
+            <label for="hoTen">Nhập tên</label>
+            <input type="text" class="form-control" id="hoTen" >
+            <label for="soKw">Nhập số Kw điện</label>
+            <input type="text" class="form-control" id="soKw">
+        </div>
+        <button type="button" class="btn btn-primary" id="btn2">Tính tiền điện</button>
+    </form>
+    <p id="thongbao2"></p>
+   </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
